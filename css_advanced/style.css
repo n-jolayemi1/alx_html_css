@@ -1,0 +1,228 @@
+/* Importing webfonts */
+/* (If you're learning CSS, you should disregard that) */
+
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+/* CSS reset rules */
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Fonts and colors */
+
+body {
+	font-family: 'Josefin Sans', serif;
+	/* color: rgba(0, 0, 0, 0.8); */
+}
+h1, h2, h3, h4, h5, h6, header {
+	font-family: 'Yeseva One', sans-serif;
+}
+
+/* links */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header .header_logo
+{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: last baseline;
+}
+
+.header_logo span
+{
+    font-size: 4rem
+}
+
+header .header_menu
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header_menu a
+{
+    display: flex;
+    margin: 0 2rem;
+}
+
+/* Main section */
+main .main-section
+{
+    background-image: url(Object.png);
+    height: 1093px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-section .get-schooled
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 4rem;
+    position: relative;
+    top: 5rem;
+
+}
+
+.main-section .get-schooled h1
+{
+    color: white;
+    font-family: Source Sans Pro;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.main-section .get-schooled .feelings
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.main-section .get-schooled button
+{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    color : rgba(255, 255, 255, 1);
+    width: 162px;
+    height: 44px;
+    background-color: rgba(194, 113, 255, 1);
+    border: none;
+    margin-top: 4rem;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.main-section .learn_section
+{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 10rem;
+}
+
+.main-section .learn_section .learn_from_pros
+{
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+}
+
+.learn_section .learn_from_pros b
+{
+    color: rgba(194, 113, 255, 1);
+}
+.main-section .learn_section .learn_content
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-section .learn_section .learn_content .content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 3rem;
+    color: white;
+}
+
+.learn_section .learn_content .content img
+{
+    border-radius: 6rem;
+}
+
+/* Blockquote section */
+.section-blockquote
+{
+    background-color: rgba(194, 113, 255, 1);
+    position: relative;
+    top: -5rem;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.section-blockquote .blockquote
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self:center;
+    flex-wrap: wrap;
+}
+
+.blockquote div
+{
+    margin: 0 0 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+.blockquote div .person_name
+{
+    margin-top: 5rem;
+    display: flex;
+}
